@@ -7,8 +7,6 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
-
-	"github.com/redis/go-redis/v9"
 )
 
 func readConf() *config {
@@ -53,12 +51,4 @@ func genPostID(length int) (ID string) {
 		ID += symbols[s : s+1]
 	}
 	return
-}
-
-// makeZmem returns a redis Z member for use in a ZSET. Score is set to zero
-func makeZmem(st string) redis.Z {
-	return redis.Z{
-		Member: st,
-		Score:  0,
-	}
 }

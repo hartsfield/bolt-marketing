@@ -5,5 +5,5 @@ import (
 )
 
 func home(w http.ResponseWriter, r *http.Request) {
-	exeTmpl(w, r, nil, "main.html")
+	exeTmpl(w, r, nil, "main.tmpl")
 }
