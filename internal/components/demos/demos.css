@@ -1,0 +1,104 @@
+{{ define "demos.css" }}
+.section-demos {
+  background-color: whitesmoke;
+}
+.asset-description {
+  font-size: 0.8em;
+}
+.asset-cat-val {
+  display: flex;
+}
+.assets {
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  width: fit-content;
+  align-content: stretch;
+  align-items: stretch;
+}
+.asset-header {
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+.asset-category > ul {
+  list-style-type: none;
+}
+.asset-img {
+  background-image: url(public/media/pr.png);
+  background-size: cover;
+  border-radius: 0.3em;
+  height: 0;
+  width: 100%;
+  padding-top: 53.64%; 
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+.sxsw-img {
+  background-image: url(public/media/sxsw.png);
+}
+.store-img {
+  background-image: url(public/media/ecom.png);
+
+}
+.mg-img {
+  background-image: url(public/media/mg.png);
+}
+.bolt-img {
+  background-image: url(public/media/bol.png);
+}
+.asset {
+  background-color: white;
+  border-radius: 0.4em;
+  padding: 0.5em;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.asset > div {
+  margin-bottom: 1.0em;
+}
+.asset-name {
+  font-weight: 300;
+  text-align: center;
+  background: #ffcd00;
+  padding: 0.1em 0 0.2em;
+  /* margin-bottom: 1em; */
+}
+.asset-category {
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+.asset-value {
+  font-size: 0.8em;
+}
+.demos-header {
+  text-align: center;
+  background: #d3e3c3;
+  font-size: 1.5em;
+  font-weight: 200;
+  border: 1px solid #babbba;
+}
+@media screen and (orientation:portrait) {
+  .assets-outer {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .assets {
+    margin-top: 0;
+    background-color: transparent;
+  }
+  .asset {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+{{end}}

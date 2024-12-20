@@ -1,0 +1,20 @@
+{{ define "splash.tmpl" }}
+<div class="section-outer splash-outer">
+    <div class="splash-inner">
+        <div class="splash-logo">{{ .CompanyName }}</div>
+        <div class="logo-sub">
+            A <b>Complete Digital Presence</b> For Your Business, At Affordable Rates
+        </div>
+        <div class="splash-services">
+            <ul>
+                <li>Web Site Development, Hosting, and Maintenance</li>
+                <li>Social Media & Ad Campaigns</li>
+                <li>Multi-Platform Marketing and Account Management</li>
+            </ul>
+        </div>
+    </div>
+    <div class="splash-image-laptop"></div>
+</div>
+<style>{{ template "splash.css" }}</style>
+<script>{{ template "splash.js"}}</script>
+{{end}}

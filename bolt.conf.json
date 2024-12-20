@@ -1,0 +1,17 @@
+{
+    "app": {
+        "name":"bolt-marketing",
+        "domain_name": "bolt-marketing.org",
+        "port": "9123",
+        "tls_enabled": "true",
+        "alertsOn": "true",
+        "env": {"logFilePath": "./log.txt"},
+        "version": "0.1",
+        "repo": ""
+    },
+    "gcloud": {
+        "command": "gcloud",
+        "zone": "us-central1-a",
+        "project": "project-1"
+    }
+}

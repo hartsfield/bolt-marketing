@@ -1,0 +1,13 @@
+{{ define "login.tmpl" }}
+<div class="section-outer login-outer section-login" id="section-login">
+    <div class="form-outer">
+        <form>
+            <input class="login-input" id="username" placeholder="username" />
+            <input class="login-input" id="password" placeholder="password" />
+            <div class="login-butt" onclick="login()">login</div>
+        </form>
+    </div>
+</div>
+<style>{{ template "login.css" }}</style>
+<script>{{ template "login.js"}}</script>
+{{end}}

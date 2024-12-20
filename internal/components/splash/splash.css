@@ -1,0 +1,64 @@
+{{ define "splash.css" }}
+.splash-outer {
+    padding-top: 9.5em;
+    padding-bottom: 4.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.splash-inner {
+    padding-bottom: 3em;
+    padding-right: 2em;
+    font-weight: 200;
+    animation: 250ms linear scaleIn;
+}
+.splash-inner > div {
+    margin-bottom: 0.5em;
+}
+.splash-logo {
+    font-size: 2em;
+    font-weight: 100;
+}
+.splash-services > ul {
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+    color: #a54f00;
+    padding-top: 0.5em;
+}
+.splash-services > ul > li {
+    padding: 0.3em 0 0 0;
+}
+.splash-image-laptop {
+    background-image: url(public/media/laptop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 16em;
+    width: 24em;
+    animation: 250ms linear scaleIn;
+}
+.logo-sub {
+    font-weight: 400;
+    /* width: 95vw; */
+}
+
+@media screen and (orientation:portrait) {
+    .splash-inner {
+        /* padding-bottom: 1.1em; */
+        padding: 0 0 2em 0;
+    }
+    .splash-outer {
+        padding-top: 8.5em;
+        padding-bottom: 3.5em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+    }
+}
+@keyframes scaleIn {
+    0% {transform: scale(0,0);}
+    100% {transform: scale(1,1);}
+}
+{{end}}

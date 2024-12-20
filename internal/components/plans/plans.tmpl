@@ -1,0 +1,34 @@
+{{ define "plans.tmpl" }}
+<div class="section-outer plans-section" id="section-plans">
+    
+    <div class="web-products">
+        <div class="plan-panel website-panel">
+            <div class="product-type">Single Page Static Web Sites</div>
+            <div class="product-price">$500</div>
+        </div>
+        <div class="plan-panel hosting-panel">
+            <div class="product-type">Hosting and Basic Maintenance</div>
+            <div class="product-price">$40/mo</div>
+        </div>
+    </div>
+
+    <div class="section-inner plans-inner">
+        <div class="plan-panel">
+            <div class="plan-name">Monthly Account Service Plan</div>
+            <div class="plan-type">Monthly</div>
+            <div class="plan-price">$20/mo</div>
+        </div>
+        <div class="plan-panel">
+            <div class="plan-type">Weekly</div>
+            <div class="plan-price">$60/mo</div>
+        </div>
+        <div class="plan-panel">
+            <div class="plan-type">Daily</div>
+            <div class="plan-price">$200/mo</div>
+        </div>
+    </div>
+
+</div>
+<style>{{ template "plans.css" }}</style>
+<script>{{ template "plans.js"}}</script>
+{{end}}

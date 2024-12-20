@@ -1,0 +1,25 @@
+{{define "footer"}}
+<div class="footer">
+    <div class="affiliates">
+         <ul>
+             <div class="affiliates-header">Affiliates:</div>
+             <li onclick="window.location = 'https://mysterygift.org/'">mysterygift</li>
+             <li onclick="window.location = 'https://indigo.hrtsfld.xyz/'">indigocoast</li>
+             <li onclick="window.location = 'https://indigo.hrtsfld.xyz/'">press-rocket</li>
+             <li onclick="window.location = 'https://indigo.hrtsfld.xyz/'">PolitiFly</li>
+             <li onclick="window.location = 'https://indigo.hrtsfld.xyz/'"></li>
+         </ul>
+    </div>
+
+    <!-- <div class="social"> -->
+    <!--     <div class="social-butt twitter-butt"></div> -->
+    <!--     <div class="social-butt insta-butt"></div> -->
+    <!-- </div> -->
+    <div class="footer-logo">
+        {{ .CompanyName }}
+    </div>
+    <!-- <div class="flying-bolt">🗲</div> -->
+</div>
+<style>{{ template "footer.css" }}</style>
+<script>{{ template "footer.js" }}</script>
+{{end}}

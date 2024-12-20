@@ -1,0 +1,36 @@
+{{ define "plans.css" }}
+.plans-section {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.plans-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.plan-panel {
+    text-align: center;
+    border: 1px solid #df9567;
+    border-radius: 0.4em;
+    padding: 3%;
+    margin: 1.5%;
+    width: -webkit-fill-available;
+}
+.plan-panel:hover {
+    background-color: whitesmoke;
+}
+.web-products {
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (orientation:landscape) {
+   .plans-section {
+    padding: 1em 20vw;
+  } 
+}
+
+@media screen and (orientation:portrait) {
+}
+
+{{end}}

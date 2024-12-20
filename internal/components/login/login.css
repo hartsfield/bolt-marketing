@@ -1,0 +1,33 @@
+{{ define "login.css" }}
+.login-outer {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.form-outer {
+    background-color: #b9350b;
+    padding: 1em;
+    border-radius: 0.3em;
+    color: white;
+    font-weight: 200;
+}
+.form-outer > form > input {
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 0.1em;
+    padding: 0.2em;
+}
+.login-butt {
+    text-align: center;
+    background: #671414;
+    padding: 0.2em 0 0.4em 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+{{end}}

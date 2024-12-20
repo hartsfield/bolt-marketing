@@ -1,0 +1,16 @@
+{{ define "contact.tmpl" }}
+<div class="section-outer section-contact" id="section-contact">
+    <div class="section-inner">
+        <form class="contact-form">
+            <h1 class="contact-header">Contact {{ .CompanyName }}</h1>
+            <input class="contact-input" id="name-input" placeholder="name"/>
+            <input class="contact-input" id="email-input" placeholder="email"/>
+            <input class="contact-input" id="phone-input" placeholder="phone"/>
+            <div class="contact-input submit-butt" onclick="submitContact()">submit</div>
+        </form>
+    </div>
+</div>
+</div>
+<style>{{ template "contact.css" }}</style>
+<script>{{ template "contact.js"}}</script>
+{{end}}

@@ -1,0 +1,25 @@
+{{ define "services.css" }}
+.section-services {
+  background-color: whitesmoke;
+    animation: 250ms linear scaleIn;
+}
+.section-services > h1, h2, p {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: 200;
+}
+.section-services > p {
+  text-align: justify;
+}
+.section-services > h2 {
+  color: #cd895e;
+}
+.section-services > h1 {
+  color: #7b8973;
+}
+.bottom-h2 {
+  margin: 2em 0 2.5em 0;
+  /* font-weight: 400; */
+  text-align: center;
+}
+{{end}}

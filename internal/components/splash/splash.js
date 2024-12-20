@@ -1,0 +1,2 @@
+{{ define "splash.js" }}
+{{end}}

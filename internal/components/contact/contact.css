@@ -1,0 +1,41 @@
+{{ define "contact.css" }}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+.contact-form > * {
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+.contact-input {
+    width: 40vw;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    background-color: whitesmoke;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+/* .contact-input::-webkit-input-placeholder { */
+/*     font-weight: 100; */
+/* } */
+.submit-butt {
+    color: #e9e0ae;
+    text-align: center;
+    background-color: #c5a15e;
+    padding: 0.2em 0 0.3em;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+@media screen and (orientation:portrait) {
+    .contact-input {
+        width: 90vw;
+    }
+}
+
+{{end}}
