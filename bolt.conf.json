@@ -3,8 +3,8 @@
         "name":"bolt-marketing",
         "domain_name": "bolt-marketing.org",
         "port": "9223",
-        "tls_enabled": "true",
-        "alertsOn": "true",
+        "tls_enabled": true,
+        "alertsOn": true,
         "env": {"logFilePath": "./log.txt"},
         "version": "0.1",
         "repo": ""
