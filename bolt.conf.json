@@ -1,17 +1,24 @@
 {
-    "app": {
-        "name":"bolt-marketing",
-        "domain_name": "bolt-marketing.org",
-        "port": "9223",
-        "tls_enabled": true,
-        "alertsOn": true,
-        "env": {"logFilePath": "./log.txt"},
-        "version": "0.1",
-        "repo": ""
+  "app": {
+    "name": "bolt-marketing",
+    "domain_name": "bolt-marketing.org",
+    "port": "9223",
+    "tls_enabled": true,
+    "alertsOn": true,
+    "env": {
+      "logFilePath": "./log.txt"
     },
-    "gcloud": {
-        "command": "gcloud",
-        "zone": "us-central1-a",
-        "project": "mysterygift"
-    }
+    "version": "0.1",
+    "repo": "https://github.com/hartsfield/bolt-marketing.org"
+  },
+  "gcloud": {
+    "command": "gcloud",
+    "zone": "us-central1-a",
+    "project": "mysterygift",
+    "user": "john",
+    "livedir": "/home/john/live/",
+    "instance": "main",
+    "proxy_home": "/home/john/bp/",
+    "proxyConf": ""
+  }
 }

@@ -25,7 +25,8 @@ func readConf() *config {
 func exeTmpl(w http.ResponseWriter, r *http.Request, view *viewData, tmpl string) {
 	if view == nil {
 		view = &viewData{
-			AppName: AppName,
+			AppName:     AppName,
+			CompanyName: AppName,
 		}
 	}
 	err := templates.ExecuteTemplate(w, tmpl, view)
