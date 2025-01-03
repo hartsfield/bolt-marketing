@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "bolt-marketing",
+    "name": "Bolt-Marketing",
     "domain_name": "bolt-marketing.org",
     "port": "9223",
     "tls_enabled": true,
