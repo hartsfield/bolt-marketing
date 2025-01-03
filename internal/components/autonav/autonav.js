@@ -13,4 +13,5 @@ function tf() {
     np.style.right = "-" + np.offsetWidth + "px";
     document.removeEventListener('click', tf);
 }
+window.onresize = tf;
 {{end}}
